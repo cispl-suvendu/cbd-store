@@ -1,0 +1,1247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply font-sans text-black
+}
+
+.container{
+    @apply mx-auto px-6 md:px-0
+}
+
+/* button */
+
+.button{
+    @apply bg-primary rounded-xl text-black text-sm font-bold uppercase tracking-wider px-6 py-4 transition-all duration-300 ease-in-out relative overflow-hidden flex items-center justify-center 
+}
+
+.button.secondary{
+    @apply bg-secondary
+}
+
+.button:hover{
+    @apply bg-black text-white
+}
+
+.button.wishlist{
+    @apply bg-transparent border border-blackLght py-3
+}
+
+.button.wishlist.active, .button.wishlist:hover{
+    @apply bg-rating text-white
+}
+
+
+/* announcement */
+
+.announcement{
+    @apply bg-primary text-black text-center py-3 text-sm tracking-wider uppercase font-semibold
+}
+
+/* header */
+
+.site-header{
+    @apply py-6
+}
+
+.header-content{
+    @apply flex items-center justify-between
+}
+
+.site-header .main-nav {
+    @apply hidden lg:block
+}
+
+.main-nav ul{
+     @apply flex items-center justify-center gap-16 uppercase font-semibold text-[0.938rem] text-blackLght tracking-wider
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active{
+    @apply text-black
+}
+
+.secondary-nav ul{
+     @apply flex items-center justify-end gap-8 text-black
+}
+
+.secondary-nav ul li{
+    @apply relative
+}
+
+.secondary-nav .cart-count{
+    @apply absolute -top-3 -right-4 bg-secondary text-black text-sm font-medium w-6 h-6 flex items-center justify-center rounded-full
+}
+
+.secondary-nav .cart-count:after{
+    @apply content-[''] absolute w-5 h-5 bg-secondary rounded-full -z-10 animate-ping
+}
+
+.site-header .logo img{
+    @apply w-[120px] md:w-auto
+} 
+
+/* index hero */
+
+.index-hero{
+    @apply bg-homeHeroTop bg-no-repeat bg-cover relative z-[1]
+}
+
+.index-hero::after{
+    @apply content-[''] absolute left-0 bottom-[20px] w-full h-[98px] bg-homeHeroBottom bg-no-repeat bg-cover z-[-1]
+}
+
+.index-hero .hero-content{
+    @apply text-center pt-10
+}
+
+.index-hero h4{
+    @apply font-bold text-[.675rem] lg:text-[1.375rem] tracking-wider uppercase text-black mb-2
+}
+
+.index-hero h1{
+    @apply font-bold text-[2.25rem] lg:text-[6.25rem] tracking-tighter uppercase text-black font-serif leading-none
+}
+
+.index-hero img{
+    @apply w-full relative left-0 lg:left-6
+}
+
+/* index-products-categories */
+
+.index-products-categories{
+    @apply bg-homeCategory bg-no-repeat bg-cover pt-12 pb-14
+}
+
+.index-products-categories ul{
+    @apply flex flex-col lg:flex-row items-start justify-between flex-wrap gap-8
+}
+
+.index-products-categories ul li {
+    @apply flex-1 
+}
+
+.index-products-categories .category-item{
+    @apply inline-flex flex-col items-center text-center gap-5
+}
+
+.index-products-categories .category-item img{
+    @apply w-[70px] md:w-auto
+}
+
+.index-products-categories .category-item h3{
+    @apply font-bold text-black text-[1.75rem] font-serif uppercase tracking-tighter
+}
+
+.index-products-categories .category-item p{
+    @apply text-blackLght text-sm w-full lg:w-[86%] mx-auto
+}
+
+.index-products-categories .category-item .action a,
+.faq-action a{
+    @apply text-black text-sm font-semibold flex items-center gap-2
+}
+
+.index-products-categories .category-item .action .material-symbols-outlined,
+.faq-action a .material-symbols-outlined{
+    @apply relative transition-all duration-300 ease-in-out
+}
+
+.index-products-categories .category-item:hover .material-symbols-outlined,
+.faq-action a:hover .material-symbols-outlined{
+    @apply translate-x-2 animate-pulse
+}
+
+/* index-product-list */
+
+.index-product-list{
+    @apply py-20
+}
+
+.heading-group{
+    @apply text-center
+}
+
+.heading-group h6{
+    @apply text-black text-base font-bold tracking-wider uppercase mb-2
+}
+
+.common-heading{
+    @apply font-serif text-black text-[1.5rem] lg:text-[2.75rem] uppercase font-bold tracking-tighter
+}
+
+/* product-item */
+
+.product-item{
+    @apply relative z-[1] overflow-hidden
+}
+
+.product-item .product-action{
+    @apply absolute left-0 top-0 w-full h-[390px] rounded-[50px_50px_6px_6px] bg-[rgba(0,_0,_0,_.8)] flex justify-center items-center flex-col gap-4 translate-x-[1000px] transition-all duration-300 ease-in-out
+}
+
+.product-item:hover .product-action{
+    @apply translate-x-0
+}
+
+.product-item .product-wishlist a{
+    @apply absolute top-6 left-6 z-[2] bg-white border border-blackLght rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 ease-in-out text-blackLght
+}
+
+.product-item:hover .product-wishlist a,
+.product-item .product-wishlist a.active{
+    @apply bg-rating text-white
+}
+
+
+.product-item .product-action .button{
+    @apply w-[186px]
+}
+
+.product-item .product-image{
+    @apply bg-[#F6F2F5] w-full h-[390px] rounded-[50px_50px_6px_6px] relative p-4
+}
+
+.product-item .product-image img{
+    @apply w-full h-[356px] object-contain block mx-auto
+}
+
+.product-item .product-content{
+    @apply flex flex-col items-center pt-8
+}
+
+.product-item .prodcut-rating {
+    @apply text-rating
+}
+
+.product-item .product-title{
+    @apply font-serif text-black text-[1.25rem] lg:text-[1.75rem] uppercase font-bold tracking-tighter
+}
+
+.product-item .product-tag{
+    @apply font-medium text-blackLght text-sm
+}
+
+.product-item .product-price{
+    @apply flex justify-center gap-4 pt-4 font-medium text-blackLght text-base uppercase
+}
+
+.product-item .product-price .old-price{
+    @apply opacity-40
+}
+
+.product-item .product-price .new-price{
+    @apply text-black font-bold
+}
+
+/* index-product-list */
+
+.index-product-list .heading-group{
+    @apply mb-12
+}
+
+.index-product-list .product-item{
+    @apply mx-6
+}
+
+.index-product-list .slick-track .slick-slide:nth-child(odd) .product-item .product-image{
+    @apply bg-[#f2f8f8]
+}
+
+.index-product-slider .slick-arrow{
+    @apply absolute top-[40%] -left-8 -translate-y-1/2 z-[1] w-10 h-10 bg-[#F6F2F5] text-black rounded-full flex items-center justify-center cursor-pointer
+}
+
+.index-product-slider .slick-arrow.nextArrow{
+    @apply -right-8 left-[initial]
+}
+
+.index-product-slider .slick-arrow:hover{
+    @apply bg-secondary
+}
+
+/* product-advertisement */
+
+.product-advertisement{
+    @apply pt-1
+}
+
+.product-advertisement ul{
+    @apply flex flex-col md:flex-row items-start justify-between gap-8
+}
+
+.product-advertisement ul li{
+    @apply w-full md:w-auto
+}
+
+.product-advertisement img{
+    @apply w-full md:w-auto
+}
+
+/* certified-products */
+
+.certified-products{
+    @apply my-16
+}
+
+.certified-products-iner{
+    @apply bg-certified bg-cover rounded-[26px] flex flex-col lg:flex-row items-center justify-between p-12 gap-12
+}
+
+.certified-products-iner .certified-products-image,
+.certified-products-iner .certified-products-content{
+    @apply flex-1
+}
+
+.certified-products-iner .certified-products-image img{
+    @apply w-full
+}
+
+.certified-products-content h2{
+    @apply text-black text-[2.5rem] lg:text-[4.125rem] font-bold font-serif uppercase leading-none
+}
+.certified-products-content h4{
+    @apply text-black text-[.875rem] lg:text-[1.5rem] font-bold uppercase leading-none
+}
+
+.certified-products-content ul{
+    @apply flex flex-col gap-2 py-8
+}
+
+.certified-products-content ul li {
+    @apply flex items-center gap-2 text-black font-semibold text-base
+}
+
+.certified-products-content p{
+    @apply text-black text-[0.938rem] font-normal
+}
+
+/* testimonial */
+
+.products-testimonials{
+    @apply pt-6 pb-16 overflow-x-hidden
+}
+
+.all-testimonials{
+    @apply pt-36
+}
+
+.testimonial-item{
+    @apply relative z-[1] mx-4
+}
+
+.testimonial-item .testimonial-image{
+    @apply w-[198px] h-[198px] rounded-full overflow-hidden absolute top-[-100px] left-1/2 -translate-x-1/2 z-[2] border-4 border-white
+}
+
+.testimonial-item .testimonial-image img{
+    @apply absolute left-0 top-0 w-full h-full object-cover
+}
+
+.testimonial-item .testimonial-content {
+    @apply bg-[#f2f8f8] rounded-[20px] p-8 pt-28 pb-12 flex flex-col gap-4 items-center justify-center max-w-full text-center
+}
+
+.testimonial-content h4{
+    @apply font-serif text-black text-[1.625rem] font-bold uppercase tracking-tighter mt-2
+}
+
+.testimonial-content p{
+    @apply text-black text-[0.938rem]
+}
+
+.testimonial-content h6{
+    @apply text-black text-[0.938rem] font-semibold
+}
+
+.testimonial-item::after{
+    @apply content-[url(../images/icon-quote.svg)] absolute left-4 top-10
+}
+
+.testimonial-item::before{
+    @apply content-[url(../images/icon-quote.svg)] absolute right-4 bottom-6 rotate-180
+}
+
+.all-testimonials .slick-list{
+    @apply overflow-visible
+}
+
+.all-testimonials .slick-dots{
+    @apply flex items-center justify-center gap-2 mt-8
+}
+
+.all-testimonials .slick-dots button{
+    @apply w-4 h-4 bg-blackLght rounded-full transition-all duration-300 ease-in-out overflow-hidden text-[0px] opacity-30
+}
+
+.all-testimonials .slick-dots .slick-active button {
+    @apply opacity-100
+}
+
+/* our-story */
+
+.our-story-inr{
+    @apply bg-black rounded-[26px] flex flex-col lg:flex-row items-center justify-between gap-12 text-white
+}
+
+.our-story-inr .our-story-content,
+.our-story-inr .our-story-image{
+    @apply flex-1
+}
+
+.our-story-inr  .our-story-image img{
+    @apply w-full rounded-[0_26px_26px_0]
+}
+
+.our-story-inr .our-story-content{
+    @apply p-12 flex flex-col gap-6 items-start
+}
+
+.our-story-content h2{
+    @apply text-white
+}
+
+.our-story-content p strong{
+    @apply text-[1.125rem]
+}
+
+.our-story-content p{
+    @apply  text-[0.938rem] font-normal w-full lg:w-[80%]
+}
+
+/* products-faq */
+
+.products-faq{
+    @apply py-16
+}
+
+.list-faq{
+    @apply pt-12 w-full lg:w-[60%] mx-auto 
+}
+
+.list-faq{
+    counter-reset: faq-counter;
+}
+
+.faq-item{
+    @apply pb-6 mb-6 border-b border-blackLght
+}
+
+.faq-question{
+    @apply cursor-pointer font-bold text-black text-base uppercase tracking-widest py-6 relative
+}
+
+.faq-question h4::before{
+    counter-increment: faq-counter;
+    content: counter(faq-counter, decimal-leading-zero);
+}
+
+.faq-question h4::before {
+    @apply font-serif text-[4.125rem] opacity-30 font-normal absolute left-0
+}
+
+.faq-question h4{
+    @apply pl-32 relative pr-10
+}
+
+.faq-question .material-symbols-outlined{
+    @apply absolute right-4 top-1/2 -translate-y-1/2 transition-all ease-out duration-300
+}
+
+.faq-answer{
+    @apply hidden font-normal text-black text-sm py-8 rounded px-6
+}
+
+.faq-item.active .faq-answer{
+    @apply block 
+}
+
+.faq-item.active .material-symbols-outlined{
+    @apply rotate-180
+}
+
+.faq-action{
+    @apply flex justify-center pt-6
+}
+
+.faq-action a {
+    @apply uppercase tracking-wider
+}
+
+/* footer */
+
+.site-footer{
+    @apply bg-black text-white pt-20 bg-footerBg bg-no-repeat bg-centerRight
+}
+
+.footer-inner{
+    @apply flex justify-between flex-col md:flex-row
+}
+
+.social{
+    @apply flex justify-start md:justify-center gap-6 pt-16
+}
+
+.social li a:hover,
+.footer-links ul li:hover,
+.footer-address .link:hover a{
+    @apply opacity-60
+}
+
+.site-info{
+    @apply text-center text-sm tracking-widest uppercase py-12 mt-12 border-t border-[#616161]
+}
+
+.footer-links {
+    @apply border-y md:border-x md:border-y-0 border-[#616161] px-0 md:px-16 mx-0 md:mx-16 py-8 my-8 md:py-0 md:my-0
+}
+
+.footer-links ul{
+    @apply flex flex-wrap
+}
+
+.footer-links ul li{
+    @apply w-1/2 text-sm font-medium uppercase mb-4 tracking-widest
+}
+
+.footer-address{
+    @apply  text-sm font-medium uppercase tracking-widest flex flex-col gap-4
+}
+
+.footer-address .link{
+    @apply capitalize whitespace-nowrap
+}
+
+/* shop-hero */
+
+.shop-hero{
+    @apply bg-shopHero py-16 text-center text-white bg-cover
+}
+
+.shop-hero h1{
+    @apply text-white
+}
+
+.shop-hero .bredcamp{
+    @apply text-sm font-semibold uppercase text-primary
+}
+
+.shop-hero .bredcamp a{
+    @apply text-white
+}
+
+/* shop-content */
+
+.shop-content{
+    @apply py-16 bg-[#f9fafc]
+}
+
+.shop-content-iner{
+    @apply flex flex-col md:flex-row justify-between gap-12
+}
+
+.shop-sidebar{
+    @apply w-full lg:w-[22%]
+}
+
+.shop-prodcuts{
+    @apply flex-1
+}
+
+.shop-prodcuts .common-heading{
+    @apply border-b
+}
+
+.shop-prodcuts-list{
+    @apply flex flex-col md:flex-row gap-10 flex-wrap my-10
+}
+
+.shop-prodcuts-list .product-item{
+    @apply w-full md:w-[30%]
+}
+
+.shop-prodcuts-list .product-item .product-image,
+.shop-prodcuts-list .product-item .product-action {
+    @apply h-[270px] rounded-[20px_20px_6px_6px]
+}
+
+.shop-prodcuts-list  .product-item .product-image img{
+    @apply h-[260px]
+}
+
+.shop-prodcuts-list  .product-item .product-title{
+    @apply text-[1.35rem]
+}
+
+
+.shop-prodcuts-list .prodcut-rating .material-symbols-outlined{
+    @apply text-[1.25rem]
+}
+
+.shop-prodcuts-list .product-action{
+    @apply pt-8
+}
+
+.shop-prodcuts-list .product-item:nth-child(odd) .product-image{
+     @apply bg-[#f2f8f8]
+}
+
+/* shop sidebar */
+
+.filter-button{
+    @apply inline-flex items-center gap-2 font-semibold text-sm uppercase text-blackLght border border-blackLght rounded px-4 py-1 cursor-pointer bg-white tracking-wider
+}
+
+.filter-button:hover{
+    @apply bg-primary text-black
+}
+
+.filter-list{
+    @apply flex flex-col gap-6 pt-6
+}
+
+.filter-item{
+    @apply bg-white rounded p-6
+}
+
+.filter-hdr{
+    @apply flex items-center justify-between border-b pb-3 mb-5 tracking-wider uppercase text-black font-semibold text-base
+}
+
+.filter-bdy ul{
+    @apply flex flex-col gap-3
+}
+
+.custom-filter{
+    @apply relative pl-6
+}
+
+.custom-filter input[type="checkbox"] {
+    @apply absolute left-0 top-0 w-full h-full cursor-pointer opacity-0
+}
+
+.custom-filter span{
+    @apply font-medium text-[0.813rem] uppercase tracking-wider text-blackLght
+}
+
+.custom-filter input[type="checkbox"]:checked + span{
+    @apply text-secondary
+}
+
+.custom-filter input[type="checkbox"]:checked + span::before,
+.custom-filter input[type="checkbox"]:checked + .f-star::before
+{
+    @apply content-[''] w-2 h-2 bg-secondary rounded-full block absolute left-2 top-1/2 -translate-y-1/2
+}
+
+.rating-filter .f-star span{
+    @apply text-rating text-[1.25rem]
+}
+
+.rating-filter .f-star span.star_half{
+    @apply text-blackLght opacity-60
+}
+
+.custom-filter input[type="checkbox"]:checked + .f-star::before{
+    @apply w-3 h-3
+}
+
+.rating-filter .f-star{
+    @apply block leading-none
+}
+
+.rating-filter input[type="checkbox"]:checked + .f-star span{
+    @apply text-secondary
+}
+
+/* single-product */
+
+.single-product-top{
+    @apply py-16
+}
+
+.single-product-top-inr{
+    @apply flex flex-col md:flex-row justify-between
+}
+
+.single-product-image{
+    @apply w-auto md:w-[40%]
+}
+.single-product-big{
+    @apply mb-10
+}
+.single-product-big .product-img-big{
+    @apply bg-[#f9fafc] w-[470px] h-[470px] rounded-2xl relative overflow-hidden
+}
+
+.single-product-big .product-img-big img{
+    @apply absolute left-0 top-0 w-full h-full object-contain
+}
+
+.single-product-small{
+    @apply px-12
+}
+
+.product-img-small{
+    @apply w-[46px] h-[46px] md:w-[76px] md:h-[76px] border rounded p-2 cursor-pointer mx-auto opacity-50
+}
+
+.single-product-small .slick-current .product-img-small{
+    @apply opacity-100 border-black
+}
+
+
+
+.single-product-content{
+    @apply w-auto md:w-[58%]
+}
+
+.single-product-rating{
+    @apply flex gap-2
+}
+
+.single-product-rating .rating-star{
+    @apply block leading-none
+}
+
+.single-product-rating .rating-star span{
+    @apply text-rating text-[1.25rem]
+}
+
+.single-product-rating .rating-text{
+    @apply text-[0.813rem] text-black uppercase tracking-wider font-semibold
+}
+
+.single-product-title{
+    @apply font-bold text-black font-serif text-[2rem] md:text-[3.375rem] uppercase
+}
+
+.single-product-price{
+    @apply flex items-center gap-6 
+}
+
+.single-product-price span{
+    @apply font-medium text-[1.375rem] text-blackLght
+}
+
+.single-product-price span.new-price{
+    @apply text-black font-semibold
+}
+
+.single-product-price .sale-badge{
+    @apply bg-secondary font-bold text-[0.75rem] uppercase rounded-2xl px-2 py-[2px]
+}
+
+.single-product-des{
+    @apply my-4 font-normal text-[0.813rem] text-blackLght flex flex-col gap-3 w-full lg:w-[70%]
+}
+
+.single-product-benefits{
+    @apply mt-6
+}
+
+.product-benefit-title{
+    @apply font-bold text-base text-black uppercase tracking-wider
+}
+
+.single-product-benefits ul{
+    @apply flex flex-col gap-2 text-[0.938rem] text-blackLght mt-3
+}
+
+.signle-product-size{
+    @apply mt-6
+}
+
+.size-list{
+    @apply flex flex-col lg:flex-row items-start lg:items-center gap-5 mt-6
+}
+
+.custom-size-box{
+    @apply relative my-2
+}
+
+
+.custom-size-box label{
+    @apply w-full border border-primary rounded-[60px] px-5 py-3 font-semibold text-sm uppercase tracking-wider text-black pl-12 relative
+}
+
+.custom-size-box label input[type="radio"] {
+    @apply absolute left-0 top-0 w-full h-full opacity-0 cursor-pointer
+}
+
+.custom-size-box label .custom-radio{
+    @apply w-6 h-6 rounded-full border border-primary block absolute left-3 top-1/2 -translate-y-1/2
+}
+
+.custom-size-box label:has(input[type="radio"]:checked) .custom-radio::after{
+    @apply absolute w-4 h-4 block content-[''] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary rounded-full
+}
+
+.custom-size-box label:has(input[type="radio"]:checked) span{
+    @apply text-primary
+}
+
+.single-product-action{
+    @apply mt-8 flex items-center gap-4
+}
+
+.single-product-action .button{
+    @apply w-full
+}
+
+.single-product-action .action:last-child{
+    @apply w-[60%]
+}
+
+.how-to-use{
+    @apply my-12 bg-howToUse bg-cover py-12
+}
+
+.how-to-use-inner ul{
+    @apply flex flex-col lg:flex-row justify-between items-start gap-10 my-12
+}
+
+.how-to-use-inner ul li{
+    @apply flex-1 text-center relative
+}
+
+.how-to-use-inner ul li::after{
+    @apply content-[''] h-[2px] bg-black w-[64%] absolute left-[74%] top-14 opacity-20
+}
+
+.how-to-use-inner ul li:last-child:after{
+    @apply content-none
+}
+
+.how-to-use-inner ul .number{
+    @apply w-[112px] h-[112px] bg-white border border-black rounded-full flex items-center justify-center mx-auto text-black text-[2.75rem] font-serif font-bold
+}
+
+.how-to-use-inner .text{
+    @apply mt-6 text-[0.938rem] text-black
+}
+
+.how-to-use-inner .action-group .button{
+    @apply mx-auto h-full lg:w-[auto]
+}
+
+/* single-product-ingridients */
+
+.single-product-ingridients{
+    @apply my-16
+}
+
+.product-ingridients-inr{
+    @apply flex justify-between relative pt-24
+}
+
+.product-ingridients-inr .ingridient-product{
+    @apply absolute w-full z-[1] left-1/2 top-[34%] -translate-x-1/2 -translate-y-1/2 
+}
+
+.ingridient-product .ingredient-bg{
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ml-12 z-[1]
+}
+
+.ingridient-product .product-img{
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] h-[560px] w-auto object-contain
+}
+
+.ingridients-list-left,
+.ingridients-list-right{
+    @apply w-full lg:w-[20%] pt-12 pb-16
+}
+
+.ingridients-list-right .ingridient-box:last-child{
+    @apply absolute right-[25%] -bottom-12
+}
+
+.ingridients-list-left .ingridient-box:last-child{
+    @apply absolute left-[25%] -bottom-12
+}
+
+.ingridients-list-left .ingridient-box:last-child ,
+.ingridients-list-right .ingridient-box:last-child{
+    @apply w-full lg:w-[240px]
+}
+
+.ingridient-box{
+    @apply mb-12
+}
+
+.ingridient-box img{
+    @apply w-[170px] h-[170px] object-cover rounded-full
+}
+
+.ingridient-box h6{
+    @apply text-[0.938rem] text-black uppercase mt-6 mb-2 font-semibold tracking-wider
+}
+
+.ingridient-box p{
+    @apply text-[0.813rem] text-blackLght w-full lg:w-[70%]
+}
+
+.single-product-faq{
+    @apply bg-productFaq py-16 mt-20
+}
+
+/* cart-drawer */
+
+.cart-drawer{
+    @apply bg-white fixed -right-[100%] top-0 w-full md:w-[34%] h-full p-6 z-20 transition-all ease-in-out duration-500
+}
+
+.cart-drawer.active{
+    @apply right-0
+}
+
+.cart-drawer-hdr{
+    @apply flex items-center justify-between
+}
+
+.cart-drawer-hdr h4,
+.popup-wishlist .popup-wishlist-hdr .common-heading{
+    @apply font-serif font-bold text-black text-[1.375rem] uppercase
+}
+
+.cart-drawer-hdr .cart-drawer-close,
+.popup-wishlist .popup-wishlist-hdr .popup-wishlist-close{
+    @apply cursor-pointer p-2 
+}
+
+.cart-drawer-hdr .cart-drawer-close span,
+.popup-wishlist-close span{
+    @apply text-black text-3xl
+}
+
+.cart-drawer-content{
+    @apply p-4
+}
+
+.cart-drawer-content-hdr,
+.cart-drawer-content-ftr{
+    @apply text-blackLght uppercase text-sm tracking-wider flex justify-between items-start border-b pb-4 mb-4 font-medium
+}
+
+.cart-drawer-content-ftr{
+    @apply border-b-0 border-t pb-0 mb-0 mt-4 pt-4
+}
+
+.cart-drawer-content-bdy{
+    @apply h-[55dvh] overflow-auto flex flex-col gap-8 py-6
+}
+
+.cart-product{
+    @apply flex justify-between items-center gap-4
+}
+
+.cart-product .product-img {
+    @apply w-[76px] h-[76px] rounded border border-black
+}
+
+.cart-product .product-title{
+    @apply w-[30%]
+}
+
+.remove-product{
+    @apply flex items-center gap-1 text-xs text-gray-300 cursor-pointer mt-2 capitalize 
+}
+
+.cart-product .remove-icon,
+.popup-wishlist-list .remove-icon{
+    @apply bg-red-600 w-3 h-3 rounded-full flex items-center justify-center cursor-pointer text-white
+}
+
+.cart-product .remove-icon span,
+.popup-wishlist-list .remove-icon span{
+    @apply text-xs
+}
+
+.cart-product .product-img a{
+    @apply block
+}
+
+.cart-product .product-img img{
+     @apply w-[76px] h-[76px] object-contain
+}
+
+.cart-product .product-title h3,
+.popup-wishlist-list .product-title{
+    @apply font-bold uppercase text-sm tracking-wide font-serif text-black
+}
+
+.cart-product .product-title h6,
+.popup-wishlist-list .product-tag{
+    @apply uppercase text-[0.813rem] tracking-wide text-blackLght
+}
+
+.cart-product .product-qty input{
+    @apply w-[78px] h-[28px] border rounded text-[0.875rem] font-bold text-blackLght text-center
+}
+
+.cart-product .product-price,
+.popup-wishlist-list .product-price{
+    @apply uppercase text-[0.875rem] tracking-wide text-black font-bold
+}
+
+.cart-drawer-ftr{
+    @apply pb-6 px-4
+}
+
+.cart-drawer-ftr .button{
+    @apply w-full
+}
+
+.drawer-active{
+    @apply overflow-hidden h-full
+}
+
+.drawer-active::after{
+    @apply content-[''] absolute left-0 top-0 w-full h-[200%] bg-black opacity-80 z-[10] 
+}
+
+/* aleart */
+
+.alert{
+    @apply w-max p-2 px-5 fixed right-10 -translate-x-1/2 top-[20%] z-50 bg-green-600 rounded-xl transition-all ease-in-out duration-[2s] animate-bounce
+}
+
+.alert.error{
+    @apply bg-red-600
+}
+
+.alert-inr{
+    @apply flex items-center gap-1 text-white font-semibold capitalize text-sm 
+}
+
+.alert-inr span{
+    @apply text-[1.25rem]
+}
+
+
+/* popup-wishlist */
+
+.popup-wishlist{
+    @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-[4000px] bg-white w-[90%] h-[90vh] rounded-3xl p-12 z-30 overflow-y-auto transition-all ease-in-out duration-500
+}
+
+.popup-wishlist.active{
+    @apply -translate-y-1/2
+}
+
+.popup-wishlist .popup-wishlist-hdr{
+    @apply flex items-center justify-between
+}
+
+.popup-wishlist-list ul{
+    @apply mt-8
+}
+
+.popup-wishlist-list ul li{ 
+    @apply mb-4 pb-4 border-b flex items-center gap-4
+}
+
+.popup-wishlist-list .product-img{
+    @apply w-32 h-32 rounded-xl border border-black p-4
+}
+
+.popup-wishlist-list .product-meta{
+    @apply flex flex-col gap-1
+}
+
+.popup-wishlist-list .old-price,
+.sr-wrap .old-price{
+    @apply opacity-30 mr-2
+}
+
+/* search-box */
+.search-box{
+    @apply w-full h-full bg-white fixed left-0 top-0 z-20 p-6 opacity-0 translate-y-[5000px] transition-all ease-in-out duration-300
+}
+
+.search-box.active{
+    @apply translate-y-0 opacity-100
+}
+
+.search-box-iner{
+    @apply relative
+}
+
+.search-box-iner .search-input{
+    @apply w-full h-28  border-b-2 border-primary px-16 font-sans text-2xl
+}
+
+.search-box-iner .search-input:focus{
+    @apply outline-none
+}
+
+.search-box-iner .icon-search{
+    @apply absolute left-6 top-1/2 -translate-y-1/2 text-3xl text-primary
+}
+
+.search-box-iner .icon-close-search{
+    @apply absolute right-6 top-1/2 -translate-y-1/2 text-4xl text-black cursor-pointer opacity-30
+}
+
+.search-box-iner .icon-close-search:hover{
+    @apply opacity-100
+}
+
+#search-results{
+    @apply py-6 h-[80dvh] overflow-auto
+}
+
+.sr-wrap{
+    @apply flex items-center gap-4 mb-4 pb-4 border-b
+}
+
+.sr-wrap .product-img{
+    @apply w-28 h-28 rounded-2xl border 
+}
+
+.sr-wrap .product-title,
+.popup-wishlist-list .product-title{
+    @apply font-serif text-2xl uppercase font-bold
+}
+
+.sr-wrap .product-tag{
+    @apply font-semibold uppercase text-blackLght text-sm
+}
+
+.sr-wrap .product-price{
+    @apply font-semibold
+}
+
+
+/* about page */
+
+.about-hero{
+    @apply bg-aboutHero bg-no-repeat bg-cover
+}
+
+.about-hero .hero-content{
+    @apply py-28 w-full lg:w-[60%]
+}
+
+.about-hero h6{
+    @apply font-bold text-[1.125rem] uppercase text-black
+}
+
+.about-hero p{
+    @apply font-medium text-[0.938rem] text-black my-5
+}
+
+.about-hero h4{
+    @apply font-bold text-[1.25rem] uppercase text-black relative px-4 w-full lg:w-[80%] mt-8
+}
+
+.about-hero h4::before{
+    @apply content-[''] bg-primary w-2 h-full block absolute left-0 top-0
+}
+
+.about-content{
+    @apply py-24 bg-[#f9fafc]
+}
+
+
+.about-content-blk{
+    @apply flex flex-col md:flex-row gap-6 items-center mb-24 mx-auto justify-center
+}
+
+.about-content-blk .img-wrap{
+    @apply w-full md:w-[40%]
+}
+
+
+.about-content-blk .content-wrap{
+    @apply w-full md:w-[40%]
+}
+
+.about-content-blk h6{
+    @apply font-medium text-[1.125rem] text-black mb-6
+}
+
+.about-content-blk p,
+.about-content-blk li{
+    @apply font-normal text-[0.875rem] text-black mb-4
+}
+
+.about-content-blk li{
+    @apply flex gap-2 items-start
+}
+
+.about-content-blk li span:first-child{
+    @apply text-primary
+}
+
+.about-imgOverly-blk{
+    @apply bg-ourPromise bg-no-repeat bg-cover text-center rounded-3xl p-6 text-white w-full md:w-[80%] mx-auto
+}
+
+.our-promise{
+    @apply w-full md:w-[80%] mx-auto py-12
+}
+
+.our-promise .common-heading{
+    @apply text-white
+}
+
+.our-promise p{
+    @apply font-medium my-4 mb-8
+}
+
+.our-promise .button{
+    @apply inline-block
+}
+
+/* FAQ */
+
+.faq-hero{
+    @apply bg-faqHero py-24 text-center text-white bg-cover
+}
+
+.faq-hero h1{
+    @apply text-white
+}
+
+.faq-hero .bredcamp{
+    @apply text-sm font-semibold uppercase text-primary
+}
+
+.faq-hero .bredcamp a{
+    @apply text-white
+}
+
+.faq-content{
+    @apply py-24 bg-[#f8fbfb]
+}
+
+.faq-content-inr{
+    @apply flex flex-col md:flex-row justify-center gap-10
+}
+
+.faq-content-inr .faq-tab{
+    @apply w-full md:w-[25%] bg-white rounded-xl p-8
+}
+
+.faq-content-inr .faq-tab ul{
+    @apply flex flex-col gap-12 font-semibold text-sm uppercase text-blackLght py-12 tracking-widest
+}
+
+.faq-content-inr .faq-tab .active{
+    @apply text-black
+}
+
+.faq-content-inr .faq-contents{
+    @apply w-full md:w-[60%]
+}
+
+.faq-content-inr .faq-content-title{
+    @apply font-bold text-[1.375rem] uppercase text-black mb-8 tracking-widest
+}
+
+.faq-contents .list-faq{
+    @apply pt-0 w-full
+}
+

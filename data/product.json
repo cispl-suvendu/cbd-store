@@ -1,0 +1,505 @@
+{
+    "products": [
+        {
+            "id": "SN-01",
+            "title": "CBD Hemp Shampoo",
+            "description": [
+                "Experience the perfect blend of plant-based care and powerful CBD infusion with SN CBD Shampoo. Specially formulated to cleanse, hydrate, and soothe the scalp, this shampoo promotes stronger, healthier, and shinier hair\u2014naturally.",
+                "Infused with broad-spectrum CBD, nourishing botanicals, and essential oils, it's your new go-to for stress-free scalp care and vibrant hair health."
+            ],
+            "benefits": [
+                "\u2705 100% Organic Broad-Spectrum CBD",
+                "\u2705 Vegan & Cruelty-Free",
+                "\u2705 Safe for Color-Treated Hair",
+                "\u2705 Third-Party Lab Tested",
+                "\u2705 Made in GMP-Certified Facility"
+            ],
+            "sizes": [
+                "250 ml / 8.4 oz",
+                "500 ml / 16.9 oz"
+            ],
+            "userManual": [
+                "Wet your hair thoroughly.",
+                "Apply a generous amount of SN CBD Shampoo to the scalp and massage gently.",
+                "Leave on for 1-2 minutes to let the CBD and botanicals absorb.",
+                "Rinse thoroughly. For best results, follow with SN CBD Conditioner."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Will this shampoo make me high?",
+                    "answer": "No. Our shampoo uses CBD with 0.0% THC. It is non-psychoactive and completely safe."
+                },
+                {
+                    "question": "Can I use this shampoo daily?",
+                    "answer": "Yes! SN CBD Shampoo is gentle enough for daily use, even on sensitive scalps."
+                },
+                {
+                    "question": "Is this safe for all hair types?",
+                    "answer": "Absolutely. It's formulated to suit all hair types, including dry, oily, color-treated, curly, or straight hair."
+                },
+                {
+                    "question": "Does it help with dandruff?",
+                    "answer": "Yes. The anti-inflammatory and moisturizing properties of CBD, tea tree oil, and aloe vera can help reduce scalp irritation, flakiness, and itchiness."
+                }
+            ],
+            "category": "cbd oil",
+            "price": 19.99,
+            "oldPrice": 29.99,
+            "discountPercentage": 10.48,
+            "rating": 4.5,
+            "stock": 99,
+            "tags": [
+                "cbd-shampoo"
+            ],
+            "brand": "Sn cbd products",
+            "sku": "SN-CBD-PRD-001",
+            "availabilityStatus": "In Stock",
+            "images": [
+                "images/prodcuts/cbd-shmapoo/prodcut-shampoo-1.png",
+                "images/prodcuts/cbd-shmapoo/prodcut-shampoo-2.jpg",
+                "images/prodcuts/cbd-shmapoo/prodcut-shampoo-3.jpg",
+                "images/prodcuts/cbd-shmapoo/prodcut-shampoo-4.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-shmapoo/prodcut-shampoo-1.png"
+        },
+        {
+            "id": "SN-02",
+            "title": "CBD Hemp Oil",
+            "sku": "SN-CBD-PRD-002",
+            "description": [
+                "SN CBD Hemp Oil offers a powerful, all-natural solution for daily wellness. Rich in cannabinoids, our hemp oil supports stress relief, restful sleep, and overall balance.",
+                "Made with premium broad-spectrum CBD, it\u2019s ideal for sublingual use or adding to food and beverages for a calm, centered lifestyle."
+            ],
+            "images": [
+                "images/prodcuts/cbd-oil/prodcut-cbdoil-1.png",
+                "images/prodcuts/cbd-oil/prodcut-cbdoil-2.jpg",
+                "images/prodcuts/cbd-oil/prodcut-cbdoil-3.jpg",
+                "images/prodcuts/cbd-oil/prodcut-cbdoil-4.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-oil/prodcut-cbdoil-1.png",
+            "benefits": [
+                "\u2705 Natural stress and anxiety support",
+                "\u2705 Promotes deeper sleep and recovery",
+                "\u2705 Fast-absorbing and easy to use",
+                "\u2705 THC-Free & Third-Party Lab Tested",
+                "\u2705 Made with Organic Ingredients"
+            ],
+            "sizes": [
+                "30 ml / 1 fl oz",
+                "60 ml / 2 fl oz"
+            ],
+            "userManual": [
+                "Shake well before use.",
+                "Take 1 full dropper (1ml) under the tongue.",
+                "Hold for 30\u201360 seconds before swallowing.",
+                "Use once or twice daily as needed."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Can I ingest this oil directly?",
+                    "answer": "Yes. This oil is designed for sublingual use or can be added to food or drinks."
+                },
+                {
+                    "question": "Is it safe for daily use?",
+                    "answer": "Absolutely! Daily use is safe and often more effective for long-term wellness."
+                }
+            ],
+            "tags": [
+                "cbd-oil"
+            ],
+            "category": "cbd oil",
+            "price": 27.99,
+            "oldPrice": 40.99,
+            "discountPercentage": 18.48,
+            "rating": 4.5,
+            "stock": 99,
+            "availabilityStatus": "In Stock",
+            "brand": "Sn cbd products"
+        },
+        {
+            "id": "SN-03",
+            "title": "CBD Hemp Liver Oil",
+            "sku": "SN-CBD-PRD-003",
+            "description": [
+                "SN CBD Hemp Liver Oil is specially formulated to support liver function and detox naturally. It combines CBD with essential omega-3s and vitamins for optimal health.",
+                "A clean, effective supplement for inner balance and organ support."
+            ],
+            "images": [
+                "images/prodcuts/cbd-liver-oil/prodcut-cbdliveroil-1.png",
+                "images/prodcuts/cbd-liver-oil/prodcut-cbdliveroil-2.jpg",
+                "images/prodcuts/cbd-liver-oil/prodcut-cbdliveroil-3.jpg",
+                "images/prodcuts/cbd-liver-oil/prodcut-cbdliveroil-4.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-liver-oil/prodcut-cbdliveroil-1.png",
+            "benefits": [
+                "\u2705 Supports liver detox and function",
+                "\u2705 Enriched with Omega-3 fatty acids",
+                "\u2705 Pure, potent, and easy to digest",
+                "\u2705 Third-Party Lab Verified",
+                "\u2705 No preservatives or artificial fillers"
+            ],
+            "sizes": [
+                "60 ml / 2 fl oz"
+            ],
+            "userManual": [
+                "Take 1-2 teaspoons daily after meals.",
+                "Consult your physician before use if under medication."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Is this suitable for vegetarians?",
+                    "answer": "No, this product contains fish liver oil."
+                }
+            ],
+            "tags": [
+                "cbd-liver-oil"
+            ],
+            "category": "cbd oil",
+            "price": 58.99,
+            "oldPrice": 79.99,
+            "discountPercentage": 40.48,
+            "rating": 4.5,
+            "stock": 99,
+            "availabilityStatus": "In Stock",
+            "brand": "Sn cbd products"
+        },
+        {
+            "id": "SN-04",
+            "title": "CBD Hemp Capsule",
+            "sku": "SN-CBD-PRD-004",
+            "description": [
+                "SN CBD Hemp Capsules provide a mess-free, convenient way to enjoy the benefits of CBD daily. Ideal for travel, work, or routine supplementation.",
+                "Each capsule contains a precise dose of CBD for easy and consistent wellness support."
+            ],
+            "images": [
+                "images/prodcuts/cbd-capsule/prodcut-capsule-1.png",
+                "images/prodcuts/cbd-capsule/prodcut-capsule-2.jpg",
+                "images/prodcuts/cbd-capsule/prodcut-capsule-3.jpg",
+                "images/prodcuts/cbd-capsule/prodcut-capsule-4.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-capsule/prodcut-capsule-1.png",
+            "benefits": [
+                "\u2705 Accurate CBD dosing in each capsule",
+                "\u2705 Easy to swallow and digest",
+                "\u2705 Non-GMO & Gluten-Free",
+                "\u2705 Supports daily wellness and balance",
+                "\u2705 THC-Free & Lab Tested"
+            ],
+            "sizes": [
+                "30 capsules",
+                "60 capsules"
+            ],
+            "userManual": [
+                "Take 1 capsule daily with water.",
+                "Do not exceed the recommended dose."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "How long do the effects last?",
+                    "answer": "Typically 4\u20136 hours depending on your metabolism."
+                }
+            ],
+            "tags": [
+                "cbd-capsule"
+            ],
+            "category": "cbd oil",
+            "price": 46.99,
+            "oldPrice": 59.99,
+            "discountPercentage": 30.48,
+            "rating": 4.5,
+            "stock": 99,
+            "availabilityStatus": "In Stock",
+            "brand": "Sn cbd products"
+        },
+        {
+            "id": "SN-05",
+            "title": "CBD Flowers",
+            "sku": "SN-CBD-PRD-005",
+            "description": [
+                "Our premium CBD Hemp Flowers are hand-trimmed, slow-cured, and rich in terpenes. Ideal for vaping or infusion, they offer a natural way to relax and unwind.",
+                "Enjoy the full-spectrum aroma and benefits of the hemp plant\u2014pure and potent."
+            ],
+            "images": [
+                "images/prodcuts/cbd-flower/prodcut-cbdflower-1.png",
+                "images/prodcuts/cbd-flower/prodcut-cbdflower-2.jpg",
+                "images/prodcuts/cbd-flower/prodcut-cbdflower-3.jpg",
+                "images/prodcuts/cbd-flower/prodcut-cbdflower-4.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-flower/prodcut-cbdflower-1.png",
+            "benefits": [
+                "\u2705 High-CBD, low-THC strain",
+                "\u2705 No additives or pesticides",
+                "\u2705 Hand-harvested and sun-dried",
+                "\u2705 Full-spectrum hemp experience",
+                "\u2705 Lab-tested for purity"
+            ],
+            "sizes": [
+                "3.5g",
+                "7g",
+                "14g"
+            ],
+            "userManual": [
+                "Use with a vaporizer or infuse in oils or teas.",
+                "Store in a cool, dry place to maintain freshness."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Can I smoke these flowers?",
+                    "answer": "Yes, but we recommend vaporizing for a cleaner experience."
+                }
+            ],
+            "tags": [
+                "cbd-flower"
+            ],
+            "category": "cbd oil",
+            "price": 99.99,
+            "oldPrice": 199.99,
+            "discountPercentage": 100,
+            "rating": 4.5,
+            "stock": 99,
+            "availabilityStatus": "In Stock",
+            "brand": "Sn cbd products"
+        },
+        {
+            "id": "SN-06",
+            "title": "CBD Cream",
+            "sku": "SN-CBD-PRD-006",
+            "description": [
+                "Our premium CBD Hemp Flowers are hand-trimmed, slow-cured, and rich in terpenes. Ideal for vaping or infusion, they offer a natural way to relax and unwind.",
+                "Enjoy the full-spectrum aroma and benefits of the hemp plant\u2014pure and potent."
+            ],
+            "images": [
+                "images/prodcuts/cbd-cream/product-cream-1.png",
+                "images/prodcuts/cbd-cream/product-cream-2.jpg",
+                "images/prodcuts/cbd-cream/product-cream-1.png",
+                "images/prodcuts/cbd-cream/product-cream-2.jpg"
+            ],
+            "thumbnail": "images/prodcuts/cbd-cream/product-cream-1.png",
+            "benefits": [
+                "\u2705 High-CBD, low-THC strain",
+                "\u2705 No additives or pesticides",
+                "\u2705 Hand-harvested and sun-dried",
+                "\u2705 Full-spectrum hemp experience",
+                "\u2705 Lab-tested for purity"
+            ],
+            "sizes": [
+                "3.5g",
+                "7g",
+                "14g"
+            ],
+            "userManual": [
+                "Use with a vaporizer or infuse in oils or teas.",
+                "Store in a cool, dry place to maintain freshness."
+            ],
+            "ingredients": [
+                {
+                    "title": "Broad-Spectrum CBD Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-1.png"
+                },
+                {
+                    "title": "Aloe Vera",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-2.png"
+                },
+                {
+                    "title": "Rosemary & Peppermint Extract",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-3.png"
+                },
+                {
+                    "title": "Tea Tree Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-4.png"
+                },
+                {
+                    "title": "Argan Oil",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-5.png"
+                },
+                {
+                    "title": "Panthenol (Pro-Vitamin B5)",
+                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page",
+                    "image": "images/ingridients/shapoo/shapoo-ingridient-6.png"
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Can I smoke these flowers?",
+                    "answer": "Yes, but we recommend vaporizing for a cleaner experience."
+                }
+            ],
+            "tags": [
+                "cbd-cream"
+            ],
+            "category": "cbd oil",
+            "price": 99.99,
+            "oldPrice": 199.99,
+            "discountPercentage": 100,
+            "rating": 4.5,
+            "stock": 99,
+            "availabilityStatus": "In Stock",
+            "brand": "Sn cbd products"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | SN CBD Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div data-include="/partials/header.html"></div>
+    <section class="faq-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="common-heading">frequently asked questions</h1>
+                <p class="bredcamp"><a href="index.html">home</a> > FAQ</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-content-inr">
+                <div class="faq-tab"></div>
+                <div class="faq-contents"></div>
+            </div>
+        </div>
+    </section>
+    <div data-include="/partials/footer.html"></div>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/faq.js" type="module"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+         $(document).on('click', '.faq-question', function () {
+                const $item = $(this).closest('.faq-item'); // get the parent item
+                $('.faq-item').not($item).removeClass('active'); // remove active from others
+                $item.toggleClass('active'); // toggle class on the clicked item
+            });
+    </script>
+</body>
+
+</html>

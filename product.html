@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | SN CBD Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+</head>
+
+<body>
+    <div data-include="/partials/header.html"></div>
+    <section class="single-product">
+        <section class="single-product-top">
+            <div class="container">
+                <div class="single-product-top-inr">
+                    <div class="single-product-image">
+                        <div class="single-product-big"></div>
+                        <div class="single-product-small"></div>
+                    </div>
+                    <div class="single-product-content">
+                        <div class="single-product-rating">
+                            <div class="rating-star">
+                                <span class="material-symbols-outlined">star_rate</span>
+                                <span class="material-symbols-outlined">star_rate</span>
+                                <span class="material-symbols-outlined">star_rate</span>
+                                <span class="material-symbols-outlined">star_rate</span>
+                                <span class="material-symbols-outlined">star_half</span>
+                            </div>
+                            <div class="rating-text">4.93 | 10,000+ Happy Customers</div>
+                        </div>
+                        <h2 class="single-product-title"></h2>
+                        <div class="single-product-price"></div>
+                        <div class="single-product-des"></div>
+                        <div class="single-product-benefits">
+                            <h4 class="product-benefit-title">Key Benefits</h4>
+                            <ul></ul>
+                        </div>
+                        <div class="signle-product-size">
+                            <div class="product-benefit-title">Available Sizes:</div>
+                            <div class="size-list"></div>
+                        </div>
+                        <div class="single-product-action"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-to-use">
+            <div class="container">
+                <div class="how-to-use-inner"></div>
+            </div>
+        </section>
+        <section class="single-product-ingridients">
+            <div class="container">
+                <div class="heading-group">
+                    <h6>Ingredients</h6>
+                    <h2 class="common-heading">Key Ingredients</h2>
+                </div>
+                <div class="product-ingridients-inr"></div>
+            </div>
+        </section>
+        <section class="products-faq single-product-faq">
+            <div class="container">
+                <div class="heading-group">
+                    <h6>frequently asked questions</h6>
+                    <h2 class="common-heading">Products faq</h2>
+                </div>
+                <div class="list-faq"></div>
+                <div class="faq-action">
+                    <a href="faq.html" class="btn">Read All Faq <span
+                            class="material-symbols-outlined">arrow_right_alt</span></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div data-include="/partials/footer.html"></div>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/productDeatils.js" type="module"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        // faq-question
+        $(document).on('click', '.faq-question', function () {
+            const $item = $(this).closest('.faq-item'); // get the parent item
+            $('.faq-item').not($item).removeClass('active'); // remove active from others
+            $item.toggleClass('active'); // toggle class on the clicked item
+        });
+    </script>
+</body>
+
+</html>
