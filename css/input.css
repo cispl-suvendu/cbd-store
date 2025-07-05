@@ -36,13 +36,13 @@ html{
 /* announcement */
 
 .announcement{
-    @apply bg-primary text-black text-center py-3 text-sm tracking-wider uppercase font-semibold
+    @apply bg-primary text-black text-center py-3 text-xs lg:text-sm tracking-wider uppercase font-semibold
 }
 
 /* header */
 
 .site-header{
-    @apply py-6
+    @apply py-6 relative
 }
 
 .header-content{
@@ -50,25 +50,38 @@ html{
 }
 
 .site-header .main-nav {
-    @apply hidden lg:block
+    @apply hidden lg:block bg-black lg:bg-transparent w-full lg:w-auto h-dvh lg:h-auto absolute lg:static left-0 top-full z-20
+}
+
+.site-header .main-nav.active{
+    @apply block
+}
+
+.mb-menu-active{
+    @apply overflow-hidden
 }
 
 .main-nav ul{
-     @apply flex items-center justify-center gap-16 uppercase font-semibold text-[0.938rem] text-blackLght tracking-wider
+     @apply flex flex-col lg:flex-row items-center justify-center gap-16 uppercase font-semibold text-[0.938rem] text-white lg:text-blackLght tracking-wider py-16 lg:py-0
 }
 
 .main-nav ul li a:hover,
 .main-nav ul li a.active{
-    @apply text-black
+    @apply text-white lg:text-black
 }
 
 .secondary-nav ul{
-     @apply flex items-center justify-end gap-8 text-black
+     @apply flex items-center justify-end gap-5 lg:gap-8 text-black 
 }
 
 .secondary-nav ul li{
     @apply relative
 }
+
+.secondary-nav ul li:last-child{
+    @apply lg:hidden
+}
+
 
 .secondary-nav .cart-count{
     @apply absolute -top-3 -right-4 bg-secondary text-black text-sm font-medium w-6 h-6 flex items-center justify-center rounded-full
@@ -79,7 +92,7 @@ html{
 }
 
 .site-header .logo img{
-    @apply w-[120px] md:w-auto
+    @apply w-[90px] md:w-auto
 } 
 
 /* index hero */
@@ -93,7 +106,7 @@ html{
 }
 
 .index-hero .hero-content{
-    @apply text-center pt-10
+    @apply text-center py-8 lg:pt-10 lg:pb-0
 }
 
 .index-hero h4{
@@ -115,11 +128,11 @@ html{
 }
 
 .index-products-categories ul{
-    @apply flex flex-col lg:flex-row items-start justify-between flex-wrap gap-8
+    @apply flex items-start justify-between flex-wrap gap-8
 }
 
 .index-products-categories ul li {
-    @apply flex-1 
+    @apply w-[44%] lg:w-auto lg:flex-1 
 }
 
 .index-products-categories .category-item{
@@ -127,20 +140,20 @@ html{
 }
 
 .index-products-categories .category-item img{
-    @apply w-[70px] md:w-auto
+    @apply w-[50px] md:w-auto
 }
 
 .index-products-categories .category-item h3{
-    @apply font-bold text-black text-[1.75rem] font-serif uppercase tracking-tighter
+    @apply font-bold text-black text-base lg:text-[1.75rem] font-serif uppercase tracking-tighter
 }
 
 .index-products-categories .category-item p{
-    @apply text-blackLght text-sm w-full lg:w-[86%] mx-auto
+    @apply text-blackLght text-xs lg:text-sm w-full lg:w-[86%] mx-auto
 }
 
 .index-products-categories .category-item .action a,
 .faq-action a{
-    @apply text-black text-sm font-semibold flex items-center gap-2
+    @apply text-black text-xs lg:text-sm font-semibold flex items-center gap-2
 }
 
 .index-products-categories .category-item .action .material-symbols-outlined,
@@ -164,7 +177,7 @@ html{
 }
 
 .heading-group h6{
-    @apply text-black text-base font-bold tracking-wider uppercase mb-2
+    @apply text-black text-xs lg:text-base font-bold tracking-wider uppercase mb-2
 }
 
 .common-heading{
@@ -286,7 +299,7 @@ html{
 }
 
 .certified-products-iner{
-    @apply bg-certified bg-cover rounded-[26px] flex flex-col lg:flex-row items-center justify-between p-12 gap-12
+    @apply bg-certified bg-cover rounded-[26px] flex flex-col lg:flex-row items-center justify-between p-6 py-12 lg:p-12 gap-12
 }
 
 .certified-products-iner .certified-products-image,
@@ -310,11 +323,11 @@ html{
 }
 
 .certified-products-content ul li {
-    @apply flex items-center gap-2 text-black font-semibold text-base
+    @apply flex items-center gap-2 text-black font-semibold text-sm lg:text-base
 }
 
 .certified-products-content p{
-    @apply text-black text-[0.938rem] font-normal
+    @apply text-black text-xs lg:text-[0.938rem] font-normal
 }
 
 /* testimonial */
@@ -324,7 +337,7 @@ html{
 }
 
 .all-testimonials{
-    @apply pt-36
+    @apply pt-28 lg:pt-36
 }
 
 .testimonial-item{
@@ -332,7 +345,7 @@ html{
 }
 
 .testimonial-item .testimonial-image{
-    @apply w-[198px] h-[198px] rounded-full overflow-hidden absolute top-[-100px] left-1/2 -translate-x-1/2 z-[2] border-4 border-white
+    @apply w-[128px] h-[128px] lg:w-[198px] lg:h-[198px] rounded-full overflow-hidden absolute top-[-60px] lg:top-[-100px] left-1/2 -translate-x-1/2 z-[2] border-4 border-white
 }
 
 .testimonial-item .testimonial-image img{
@@ -344,11 +357,11 @@ html{
 }
 
 .testimonial-content h4{
-    @apply font-serif text-black text-[1.625rem] font-bold uppercase tracking-tighter mt-2
+    @apply font-serif text-black text-base lg:text-[1.625rem] font-bold uppercase tracking-tighter mt-2
 }
 
 .testimonial-content p{
-    @apply text-black text-[0.938rem]
+    @apply text-black text-xs lg:text-[0.938rem]
 }
 
 .testimonial-content h6{
@@ -356,11 +369,11 @@ html{
 }
 
 .testimonial-item::after{
-    @apply content-[url(../images/icon-quote.svg)] absolute left-4 top-10
+    @apply content-[url(../images/icon-quote.svg)] absolute left-4 top-10 scale-50 lg:scale-100
 }
 
 .testimonial-item::before{
-    @apply content-[url(../images/icon-quote.svg)] absolute right-4 bottom-6 rotate-180
+    @apply content-[url(../images/icon-quote.svg)] absolute right-4 bottom-6 rotate-180 scale-50 lg:scale-100
 }
 
 .all-testimonials .slick-list{
@@ -395,7 +408,7 @@ html{
 }
 
 .our-story-inr .our-story-content{
-    @apply p-12 flex flex-col gap-6 items-start
+    @apply px-6 py-12 lg:p-12 flex flex-col gap-6 items-start
 }
 
 .our-story-content h2{
@@ -403,11 +416,11 @@ html{
 }
 
 .our-story-content p strong{
-    @apply text-[1.125rem]
+    @apply text-sm lg:text-[1.125rem]
 }
 
 .our-story-content p{
-    @apply  text-[0.938rem] font-normal w-full lg:w-[80%]
+    @apply text-xs lg:text-[0.938rem] font-normal w-full lg:w-[80%]
 }
 
 /* products-faq */
@@ -429,7 +442,7 @@ html{
 }
 
 .faq-question{
-    @apply cursor-pointer font-bold text-black text-base uppercase tracking-widest py-6 relative
+    @apply cursor-pointer font-bold text-black text-sm lg:text-base uppercase tracking-widest py-6 relative
 }
 
 .faq-question h4::before{
@@ -438,11 +451,11 @@ html{
 }
 
 .faq-question h4::before {
-    @apply font-serif text-[4.125rem] opacity-30 font-normal absolute left-0
+    @apply font-serif text-4xl lg:text-[4.125rem] opacity-30 font-normal absolute left-0 top-1/2 -translate-y-1/2
 }
 
 .faq-question h4{
-    @apply pl-32 relative pr-10
+    @apply pl-16 lg:pl-32 relative pr-10
 }
 
 .faq-question .material-symbols-outlined{
@@ -472,7 +485,7 @@ html{
 /* footer */
 
 .site-footer{
-    @apply bg-black text-white pt-20 bg-footerBg bg-no-repeat bg-centerRight
+    @apply bg-black text-white pt-20 lg:bg-footerBg bg-no-repeat bg-centerRight
 }
 
 .footer-inner{
@@ -490,7 +503,7 @@ html{
 }
 
 .site-info{
-    @apply text-center text-sm tracking-widest uppercase py-12 mt-12 border-t border-[#616161]
+    @apply text-left lg:text-center text-xs lg:text-sm tracking-widest uppercase py-12 mt-12 border-t border-[#616161]
 }
 
 .footer-links {
@@ -502,11 +515,11 @@ html{
 }
 
 .footer-links ul li{
-    @apply w-1/2 text-sm font-medium uppercase mb-4 tracking-widest
+    @apply w-1/2 text-xs lg:text-sm font-medium uppercase mb-4 tracking-widest
 }
 
 .footer-address{
-    @apply  text-sm font-medium uppercase tracking-widest flex flex-col gap-4
+    @apply text-xs  lg:text-sm font-medium uppercase tracking-widest flex flex-col gap-4
 }
 
 .footer-address .link{
@@ -598,7 +611,11 @@ html{
 }
 
 .filter-list{
-    @apply flex flex-col gap-6 pt-6
+    @apply hidden lg:flex flex-col gap-6 pt-6
+}
+
+.filter-list.active{
+    @apply block
 }
 
 .filter-item{
@@ -658,7 +675,7 @@ html{
 /* single-product */
 
 .single-product-top{
-    @apply py-16
+    @apply py-6 lg:py-16
 }
 
 .single-product-top-inr{
@@ -672,7 +689,7 @@ html{
     @apply mb-10
 }
 .single-product-big .product-img-big{
-    @apply bg-[#f9fafc] w-[470px] h-[470px] rounded-2xl relative overflow-hidden
+    @apply bg-[#f9fafc] w-full h-[300px] lg:w-[470px] lg:h-[470px] rounded-2xl relative overflow-hidden
 }
 
 .single-product-big .product-img-big img{
@@ -684,7 +701,7 @@ html{
 }
 
 .product-img-small{
-    @apply w-[46px] h-[46px] md:w-[76px] md:h-[76px] border rounded p-2 cursor-pointer mx-auto opacity-50
+    @apply w-[36px] h-[36px] md:w-[76px] md:h-[76px] border rounded p-2 cursor-pointer mx-3 lg:mx-auto opacity-50
 }
 
 .single-product-small .slick-current .product-img-small{
@@ -694,11 +711,11 @@ html{
 
 
 .single-product-content{
-    @apply w-auto md:w-[58%]
+    @apply w-auto md:w-[58%] pt-12 lg:pt-0
 }
 
 .single-product-rating{
-    @apply flex gap-2
+    @apply flex flex-col lg:flex-row gap-2 mb-4 lg:mb-0
 }
 
 .single-product-rating .rating-star{
@@ -714,7 +731,7 @@ html{
 }
 
 .single-product-title{
-    @apply font-bold text-black font-serif text-[2rem] md:text-[3.375rem] uppercase
+    @apply font-bold text-black font-serif text-2xl lg:text-[2rem] md:text-[3.375rem] uppercase
 }
 
 .single-product-price{
@@ -799,7 +816,7 @@ html{
 }
 
 .how-to-use-inner ul{
-    @apply flex flex-col lg:flex-row justify-between items-start gap-10 my-12
+    @apply flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 my-12
 }
 
 .how-to-use-inner ul li{
@@ -807,7 +824,7 @@ html{
 }
 
 .how-to-use-inner ul li::after{
-    @apply content-[''] h-[2px] bg-black w-[64%] absolute left-[74%] top-14 opacity-20
+    @apply hidden lg:block content-[''] h-[2px] bg-black w-[64%] absolute left-[74%] top-14 opacity-20
 }
 
 .how-to-use-inner ul li:last-child:after{
@@ -833,11 +850,11 @@ html{
 }
 
 .product-ingridients-inr{
-    @apply flex justify-between relative pt-24
+    @apply flex flex-col lg:flex-row justify-between relative pt-6 lg:pt-24
 }
 
 .product-ingridients-inr .ingridient-product{
-    @apply absolute w-full z-[1] left-1/2 top-[34%] -translate-x-1/2 -translate-y-1/2 
+    @apply hidden lg:block absolute w-full z-[1] left-1/2 top-[34%] -translate-x-1/2 -translate-y-1/2 
 }
 
 .ingridient-product .ingredient-bg{
@@ -850,15 +867,19 @@ html{
 
 .ingridients-list-left,
 .ingridients-list-right{
-    @apply w-full lg:w-[20%] pt-12 pb-16
+    @apply w-full lg:w-[20%] pt-12  lg:pb-16
+}
+
+.ingridients-list-right{
+    @apply pt-0 lg:pt-12
 }
 
 .ingridients-list-right .ingridient-box:last-child{
-    @apply absolute right-[25%] -bottom-12
+    @apply lg:absolute right-[25%] -bottom-12
 }
 
 .ingridients-list-left .ingridient-box:last-child{
-    @apply absolute left-[25%] -bottom-12
+    @apply lg:absolute left-[25%] -bottom-12
 }
 
 .ingridients-list-left .ingridient-box:last-child ,
@@ -867,11 +888,11 @@ html{
 }
 
 .ingridient-box{
-    @apply mb-12
+    @apply mb-12 text-center lg:text-left
 }
 
 .ingridient-box img{
-    @apply w-[170px] h-[170px] object-cover rounded-full
+    @apply w-[170px] h-[170px] object-cover rounded-full mx-auto lg:mx-0
 }
 
 .ingridient-box h6{
@@ -937,11 +958,11 @@ html{
 }
 
 .cart-product .product-img {
-    @apply w-[76px] h-[76px] rounded border border-black
+    @apply w-[40px] h-[40px] lg:w-[76px] lg:h-[76px] rounded border border-black
 }
 
 .cart-product .product-title{
-    @apply w-[30%]
+    @apply w-[50%] lg:w-[30%]
 }
 
 .remove-product{
@@ -963,12 +984,12 @@ html{
 }
 
 .cart-product .product-img img{
-     @apply w-[76px] h-[76px] object-contain
+     @apply w-[40px] h-[40px] lg:w-[76px] lg:h-[76px] object-contain
 }
 
 .cart-product .product-title h3,
 .popup-wishlist-list .product-title{
-    @apply font-bold uppercase text-sm tracking-wide font-serif text-black
+    @apply font-bold uppercase text-xs lg:text-sm tracking-wide font-serif text-black
 }
 
 .cart-product .product-title h6,
@@ -977,7 +998,7 @@ html{
 }
 
 .cart-product .product-qty input{
-    @apply w-[78px] h-[28px] border rounded text-[0.875rem] font-bold text-blackLght text-center
+    @apply w-[30px] lg:w-[78px] h-[28px] border rounded text-[0.875rem] font-bold text-blackLght text-center
 }
 
 .cart-product .product-price,
@@ -1039,7 +1060,7 @@ html{
 }
 
 .popup-wishlist-list ul li{ 
-    @apply mb-4 pb-4 border-b flex items-center gap-4
+    @apply mb-4 pb-4 border-b flex flex-col lg:flex-row items-center gap-4
 }
 
 .popup-wishlist-list .product-img{
@@ -1102,7 +1123,7 @@ html{
 
 .sr-wrap .product-title,
 .popup-wishlist-list .product-title{
-    @apply font-serif text-2xl uppercase font-bold
+    @apply font-serif text-xl lg:text-2xl uppercase font-bold
 }
 
 .sr-wrap .product-tag{

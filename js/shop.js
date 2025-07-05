@@ -88,3 +88,13 @@ document.body.addEventListener('input', function (e) {
 
     }
 })
+
+document.body.addEventListener('click', function (e) {
+    if(e.target.closest('.filter-button')) {
+        const filterDrawer = document.querySelector('.filter-list')
+        if(filterDrawer) {
+            filterDrawer.classList.toggle('active')
+        }
+    }
+
+})

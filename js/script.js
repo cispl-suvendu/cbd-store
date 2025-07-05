@@ -17,6 +17,7 @@ async function includeHeaderFooter() {
     showHideCart()
     displayCartCount()
     dispayWhishListModal()
+    showHideMobileMenu()
 }
 
 function highlightActiveNav() {
@@ -119,6 +120,27 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             }
         });
     }
+}
+
+// mobile menu
+
+function showHideMobileMenu () {
+    document.body.addEventListener('click', function (e) {
+        if(e.target.closest('#mb-menu-tigger')) {
+            const mobileMenu = document.querySelector('.main-nav');
+            const myElement = e.target.closest('#mb-menu-tigger')
+            const menuIcon = myElement.querySelector('.material-symbols-outlined')
+            if(mobileMenu) {
+                mobileMenu.classList.toggle('active')
+                document.body.classList.toggle('mb-menu-active');
+                if (menuIcon.innerHTML === 'menu') {
+                    menuIcon.innerHTML = 'close';
+                } else {
+                    menuIcon.innerHTML = 'menu';
+                }
+            }
+        }
+    })
 }
 
 
