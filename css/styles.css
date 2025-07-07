@@ -939,6 +939,7 @@ html {
 @media (min-width: 1024px) {
   .site-header .main-nav {
     position: static;
+    z-index: 0;
     display: block;
     height: auto;
     width: auto;
@@ -2603,7 +2604,7 @@ html {
 }
 
 .single-product-rating {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -2611,7 +2612,6 @@ html {
 
 @media (min-width: 1024px) {
   .single-product-rating {
-    margin-bottom: 0px;
     flex-direction: row;
   }
 }
@@ -2642,19 +2642,20 @@ html {
   line-height: 2rem;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgb(57 57 57 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px) {
   .single-product-title {
-    font-size: 3.375rem;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .single-product-title {
-    font-size: 2rem;
+    font-size: 3.375rem;
   }
 }
 
