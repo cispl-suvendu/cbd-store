@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
 .slider .price-slider {
     height: 100%;
     left: 10%;
-    right: 30%;
+    right: 0;
     position: absolute;
     border-radius: 5px;
     background: #D6C4D4;

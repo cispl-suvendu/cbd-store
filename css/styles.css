@@ -3354,7 +3354,7 @@ html {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(57 57 57 / var(--tw-text-opacity, 1));
 }

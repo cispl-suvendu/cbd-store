@@ -1,8 +1,8 @@
 import { fetchProducts } from "./api.js"
 import { addToCart, isProductInWhishList, addToWishList } from "./utils.js"
 
-export async function dispayShopProducts(filter) {
-    const products = await fetchProducts(filter)
+export async function dispayShopProducts(filter, minPrice, maxPrice) {
+    const products = await fetchProducts(filter, minPrice, maxPrice)
 
     const shopContainer = document.querySelector('.shop-prodcuts-list')
 
@@ -72,27 +72,38 @@ export async function dispayShopProducts(filter) {
 dispayShopProducts()
 
 document.body.addEventListener('input', function (e) {
-    if (e.target.closest('.custom-filter input[name="product-cat"]')) {
-        const checkboxes = document.getElementsByName('product-cat')
-        const selectedValues = [];
-        for (let i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].checked) {
-                selectedValues.push(checkboxes[i].value);
-            }
-        }
-        if (selectedValues.length > 0) {
-            dispayShopProducts(selectedValues)
-        } else {
-            dispayShopProducts(['all'])
-        }
+    const isCategoryInput = e.target.closest('.custom-filter input[name="product-cat"]');
+    const isMinOrMaxInput = e.target.closest('.min-input') || e.target.closest('.max-input') || e.target.closest('.min-range') || e.target.closest('.max-range');
 
+    const checkboxes = document.getElementsByName('product-cat');
+    const rangeMinPrice = document.querySelector('.min-range').value || 0;
+    const rangeMaxPrice = document.querySelector('.max-range').value || 100;
+
+    console.log('range', rangeMinPrice, rangeMaxPrice)
+
+    const selectedValues = [];
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            selectedValues.push(checkboxes[i].value);
+        }
     }
-})
+
+    // If category changed or price inputs changed, update accordingly
+    if (isCategoryInput || isMinOrMaxInput) {
+        if (selectedValues.length > 0) {
+            dispayShopProducts(selectedValues, rangeMinPrice, rangeMaxPrice);
+        } else {
+            dispayShopProducts(['all'], rangeMinPrice, rangeMaxPrice);
+        }
+    }
+});
+
 
 document.body.addEventListener('click', function (e) {
-    if(e.target.closest('.filter-button')) {
+    if (e.target.closest('.filter-button')) {
         const filterDrawer = document.querySelector('.filter-list')
-        if(filterDrawer) {
+        if (filterDrawer) {
             filterDrawer.classList.toggle('active')
         }
     }

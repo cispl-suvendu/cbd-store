@@ -873,7 +873,6 @@ html{
 .ingridients-list-right{
     @apply pt-0 lg:pt-12
 }
-
 .ingridients-list-right .ingridient-box:last-child{
     @apply lg:absolute right-[25%] -bottom-12
 }
@@ -1003,7 +1002,7 @@ html{
 
 .cart-product .product-price,
 .popup-wishlist-list .product-price{
-    @apply uppercase text-[0.875rem] tracking-wide text-black font-bold
+    @apply uppercase text-[0.875rem] tracking-widest text-black font-bold
 }
 
 .cart-drawer-ftr{
